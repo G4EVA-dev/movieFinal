@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="root">
+    <!-- !HEADER -->
+    <div class="container">
+    <header>
+      <!--Logo-->
+      <div class="logo">
+        <div class="poster">
+          <img src="./assets/tv.png" alt="Logo" />
+        </div>
+        <div class="text">
+          <h2>MovieBox</h2>
+        </div>
+      </div>
+      <!--Search-->
+      <div class="search">
+        <input type="text" placeholder="What do you want to watch?" />
+        <button><img src="./assets/search.png" alt="Search" /></button>
+      </div>
+      <!--Menu-->
+      <div class="menu">
+        <div class="text"><h3>Sign in</h3></div>
+        <div class="icon">
+          <img src="./assets/Menu alt 4.png" alt="" />
+        </div>
+      </div>
+    </nav>
+    </header>
+
+    <div class="descriptionBox">
+      <h1>John Wick 3 : Parabellum</h1>
+      <div class="rating">
+        <div class="imdb">
+          <img src="./assets/imdb.png" alt="" />
+          <p>86.0/100</p>
+        </div>
+        <div class="rottenTomatoes">
+          <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
+          <p>97%</p>
+        </div>
+      </div>
+
+      <div class="Content">
+        <p>
+          John Wick is on the run after killing a member of the international
+          assassins' guild, and with a $14 million price tag on his head, he
+          is the target of hit men and women everywhere.
+        </p>
+      </div>
+
+      <div class="button">
+        <button>
+          <img src="./assets/play.png" alt="Play" />
+          <span>Watch trailer</span>
+        </button>
+      </div>
+    </div>
+    
+  </div>
+
+  <main>
+    <div class="featuredMovie">
+      <div class="featuredText">
+        <p>Featured Movie</p>
+        <div class="seeMore">
+          <h4>See More</h4>
+          <img src="./assets/arrow.png" alt="Arrow" />
+        </div>
+      </div>
+
+      <!--************!MOVIE LIST************-->
+      <div class="movieList">
+        <!--Stranger Things-->
+        <div data-testid="movie-card" class="movieCard">
+          <div class="poster">
+            <img
+              data-testid="movie-poster"
+              src="./assets/strangerThings.png"
+              alt="Stranger Things"
+              loading="lazy"
+            />
+          </div>
+          <div class="title">
+            <h2 data-testid="movie-title">Stranger Things</h2>
+          </div>
+          <div class="releaseDate">
+            <h2 data-testid="movie-released-date">USA, 2016 - Current</h2>
+          </div>
+          <div class="rating">
+            <div class="imdb">
+              <img src="./assets/imdb.png" alt="" />
+              <div class="figures"><p>86.0/100</p></div>
+            </div>
+            <div class="rottenTomatoes">
+              <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
+              <div class="figures"><p>97%</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!--Batman Begins-->
+        <div data-testid="movie-card" class="movieCard">
+          <div class="poster">
+            <img
+              data-testid="movie-poster"
+              src="./assets/BadMan.png"
+              alt="Bat Man"
+              loading="lazy"
+            />
+          </div>
+          <div class="title">
+            <h2 data-testid="movie-title">Batman Begins</h2>
+          </div>
+          <div class="releaseDate">
+            <h2 data-testid="movie-released-date">USA, 2005</h2>
+          </div>
+          <div class="runtime">
+            <h2 data-testid="movie-runtime"></h2>
+          </div>
+          <div class="rating">
+            <div class="imdb">
+              <img src="./assets/imdb.png" alt="" />
+              <div class="figures"><p>86.0/100</p></div>
+            </div>
+            <div class="rottenTomatoes">
+              <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
+              <div class="figures"><p>97%</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!--Spider Man-->
+        <div data-testid="movie-card" class="movieCard">
+          <div class="poster">
+            <img
+              data-testid="movie-poster"
+              src="./assets/spiderMan.png"
+              alt="Bat Man"
+              loading="lazy"
+            />
+          </div>
+          <div class="title">
+            <h2 data-testid="movie-title">
+              Spider-Man: Into The Spider Verse
+            </h2>
+          </div>
+          <div class="releaseDate">
+            <h2 data-testid="movie-released-date">USA, 2018</h2>
+          </div>
+          <div class="runtime">
+            <h2 data-testid="movie-runtime"></h2>
+          </div>
+          <div class="rating">
+            <div class="imdb">
+              <img src="./assets/imdb.png" alt="" />
+              <div class="figures"><p>86.0/100</p></div>
+            </div>
+            <div class="rottenTomatoes">
+              <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
+              <div class="figures"><p>97%</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!--Dunkirk-->
+        <div data-testid="movie-card" class="movieCard">
+          <div class="poster">
+            <img
+              data-testid="movie-poster"
+              src="./assets/dunkirk.png"
+              alt="Bat Man"
+              loading="lazy"
+            />
+          </div>
+          <div class="title">
+            <h2 data-testid="movie-title">Dunkirk</h2>
+          </div>
+          <div class="releaseDate">
+            <h2 data-testid="movie-released-date">USA, 2017</h2>
+          </div>
+          <div class="runtime">
+            <h2 data-testid="movie-runtime"></h2>
+          </div>
+          <div class="rating">
+            <div class="imdb">
+              <img src="./assets/imdb.png" alt="" />
+              <div class="figures"><p>86.0/100</p></div>
+            </div>
+            <div class="rottenTomatoes">
+              <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
+              <div class="figures"><p>97%</p></div>
+            </div>
+          </div>
+        </div>
+      
+
+      <!--!New Arrival-->
+        <!--Dune-->
+        <div data-testid="movie-card" class="movieCard">
+          <div class="poster">
+            <img
+              id="moviePoster"
+              data-testid="movie-poster"
+              src="./assets/Dune.png"
+              alt="Dune"
+              loading="lazy"
+            />
+          </div>
+          <div class="title">
+            <h2 id="movieTitle" data-testid="movie-title">Dune</h2>
+          </div>
+          <div class="releaseDate">
+            <h2 id="movieReleaseDate" data-testid="movie-released-date">
+              USA, 2021
+            </h2>
+          </div>
+          <div class="runtime">
+            <h2 id="movieRuntime" data-testid="movie-runtime"></h2>
+          </div>
+          <div class="rating">
+            <div class="imdb">
+              <img src="./assets/imdb.png" alt="" />
+              <div class="figures"><p>86.0/100</p></div>
+            </div>
+            <div class="rottenTomatoes">
+              <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
+              <div class="figures"><p>97%</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!--No Time To Die-->
+        <div data-testid="movie-card" class="movieCard">
+          <div class="poster">
+            <img
+              data-testid="movie-poster"
+              src="./assets/noTimeToDie.png"
+              alt="No Time"
+              loading="lazy"
+            />
+          </div>
+          <div class="title">
+            <h2 data-testid="movie-title">No Time To Die</h2>
+          </div>
+          <div class="releaseDate">
+            <h2 data-testid="movie-released-date">USA, 2021</h2>
+          </div>
+          <div class="runtime">
+            <h2 data-testid="movie-runtime"></h2>
+          </div>
+          <div class="rating">
+            <div class="imdb">
+              <img src="./assets/imdb.png" alt="" loading="lazy"/>
+              <div class="figures"><p>86.0/100</p></div>
+            </div>
+            <div class="rottenTomatoes">
+              <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
+              <div class="figures"><p>97%</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!--Shang-Chi-->
+        <div data-testid="movie-card" class="movieCard">
+          <div class="poster">
+            <img
+              data-testid="movie-poster"
+              src="./assets/shangChi.png"
+              alt="Shang-Chi"
+              loading="lazy"
+            />
+          </div>
+          <div class="title">
+            <h2 data-testid="movie-title">
+              Shang-Chi and the Legend of the Ten Rings
+            </h2>
+          </div>
+          <div class="releaseDate">
+            <h2 data-testid="movie-released-date">USA, 2021</h2>
+          </div>
+          <div class="runtime">
+            <h2 data-testid="movie-runtime"></h2>
+          </div>
+          <div class="rating">
+            <div class="imdb">
+              <img src="./assets/imdb.png" alt="" loading="lazy"/>
+              <div class="figures"><p>86.0/100</p></div>
+            </div>
+            <div class="rottenTomatoes">
+              <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
+              <div class="figures"><p>97%</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!--Don't Breathe-->
+        <div data-testid="movie-card" class="movieCard">
+          <div class="poster">
+            <img
+              data-testid="movie-poster"
+              src="./assets/dontBreathe.png"
+              alt="Bat Man"
+              loading="lazy"
+            />
+          </div>
+          <div class="title">
+            <h2 data-testid="movie-title">Don't Breathe 2</h2>
+          </div>
+          <div class="releaseDate">
+            <h2 data-testid="movie-released-date">USA, 2021</h2>
+          </div>
+          <div class="runtime">
+            <h2 data-testid="movie-runtime"></h2>
+          </div>
+          <div class="rating">
+            <div class="imdb">
+              <img src="./assets/imdb.png" alt="" loading="lazy"/>
+              <div class="figures"><p>86.0/100</p></div>
+            </div>
+            <div class="rottenTomatoes">
+              <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
+              <div class="figures"><p>97%</p></div>
+            </div>
+          </div>
+        </div>
+
+      
+          <!--Dune-->
+          <div data-testid="movie-card" class="movieCard">
+            <div class="poster">
+              <img
+                data-testid="movie-poster"
+                src="./assets/Dune.png"
+                alt="Dune"
+                loading="lazy"
+              />
+            </div>
+            <div class="title">
+              <h2 data-testid="movie-title">Dune</h2>
+            </div>
+            <div class="releaseDate">
+              <h2 data-testid="movie-released-date">USA, 2021</h2>
+            </div>
+            <div class="runtime">
+              <h2 data-testid="movie-runtime"></h2>
+            </div>
+            <div class="rating">
+              <div class="imdb">
+                <img src="./assets/imdb.png" alt="" loading="lazy"/>
+                <div class="figures"><p>86.0/100</p></div>
+              </div>
+              <div class="rottenTomatoes">
+                <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
+                <div class="figures"><p>97%</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!--No Time To Die-->
+          <div data-testid="movie-card" class="movieCard">
+            <div class="poster">
+              <img
+                data-testid="movie-poster"
+                src="./assets/noTimeToDie.png"
+                alt="No Time"
+                loading="lazy"
+              />
+            </div>
+            <div class="title">
+              <h2 data-testid="movie-title">No Time To Die</h2>
+            </div>
+            <div class="releaseDate">
+              <h2 data-testid="movie-released-date">USA, 2021</h2>
+            </div>
+            <div class="runtime">
+              <h2 data-testid="movie-runtime"></h2>
+            </div>
+            <div class="rating">
+              <div class="imdb">
+                <img src="./assets/imdb.png" alt="" loading="lazy"/>
+                <div class="figures"><p>86.0/100</p></div>
+              </div>
+              <div class="rottenTomatoes">
+                <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
+                <div class="figures"><p>97%</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!--Shang-Chi-->
+          <div data-testid="movie-card" class="movieCard">
+            <div class="poster">
+              <img
+                data-testid="movie-poster"
+                src="./assets/shangChi.png"
+                alt="Shang-Chi"
+                loading="lazy"
+              />
+            </div>
+            <div class="title">
+              <h2 data-testid="movie-title">
+                Shang-Chi and the Legend of the Ten Rings
+              </h2>
+            </div>
+            <div class="releaseDate">
+              <h2 data-testid="movie-released-date">USA, 2021</h2>
+            </div>
+            <div class="runtime">
+              <h2 data-testid="movie-runtime"></h2>
+            </div>
+            <div class="rating">
+              <div class="imdb">
+                <img src="./assets/imdb.png" alt="" loading="lazy"/>
+                <div class="figures"><p>86.0/100</p></div>
+              </div>
+              <div class="rottenTomatoes">
+                <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
+                <div class="figures"><p>97%</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!--Don't Breathe-->
+          <div data-testid="movie-card" class="movieCard">
+            <div class="poster">
+              <img
+                data-testid="movie-poster"
+                src="./assets/dontBreathe.png"
+                alt="Bat Man"
+                loading="lazy"
+              />
+            </div>
+            <div class="title">
+              <h2 data-testid="movie-title">Don't Breathe 2</h2>
+            </div>
+            <div class="releaseDate">
+              <h2 data-testid="movie-released-date">USA, 2021</h2>
+            </div>
+            <div class="runtime">
+              <h2 data-testid="movie-runtime"></h2>
+            </div>
+            <div class="rating">
+              <div class="imdb">
+                <img src="./assets/imdb.png" alt="" />
+                <div class="figures"><p>86.0/100</p></div>
+              </div>
+              <div class="rottenTomatoes">
+                <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
+                <div class="figures"><p>97%</p></div>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <!--!Footer-->
+  <footer>
+    <div class="social">
+       <a href="#"><img src="./assets/facebook.png" alt="Facebook" /></a>
+       <a href="#"><img src="./assets/instagram.png" alt="Instagram" /></a>
+       <a href="#"><img src="./assets/twitter.png" alt="Twitter" /></a>
+       <a href="#"><img src="./assets/yotube.png" alt="YouTube" /></a>  
+    </div>
+
+    <div class="termLinks">
+      <a href="#">Conditions of Use</a>
+      <a href="#">Privacy & Policy</a>
+      <a href="#">Press Room</a>
+    </div>
+
+    <div class="copyWright">
+      <p style="color: #333;">&copy;2021 MovieBox by Adriana Eka Prayugha</p>
+    </div>
+  </footer>
+
+        </div>
+      </div> 
+  </main>
+    
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
