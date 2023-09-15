@@ -256,24 +256,17 @@ main {
 }
 
 /*!FOOTER*/
-/* footer{
-  width: 492px;
-  height: 145.43px;
-  margin: 50px auto;
-}  */
 
 footer {
   padding: 1.5em;  
-  width: 100%;
+  width: 80%;
   min-height: fit-content;
   display: grid;
   gap: 20px 150px;
   justify-content: center;
   text-align: center;
   margin-top: 160px;
-  background-color: whitesmoke;
   color: #000;
-  /* box-shadow: 0.5px 0.5px 0 2px rgb(45, 45, 82); */
 }
 
 .termLinks  a{
@@ -298,29 +291,12 @@ footer {
 }
 
 @media (max-width: 750px) {
+  .descriptionBox {
+    width: 310px;
+  }
   .movieList {
     grid-template-columns: max-content;
   }
-}
-
-@media (max-width: 1000px) {
-  .container {
-    background-image: url("./assets/Wick.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-  }
-
-  .icon{
-    display: none;
-  }
-
-  .text h2{
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 650px) {
   .search{
     width: 310px;
   }
@@ -339,7 +315,9 @@ footer {
   .featuredText p{
     justify-content: center;
   }
-
+  .footer{
+    width: 300px;
+  }  
   .termLinks{
     display: flex;
     flex-direction: column;
@@ -351,5 +329,21 @@ footer {
 
   .logo .poster img{
     width: 35px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    background-image: url("./assets/Wick.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .icon{
+    display: none;
+  }
+
+  .text h2{
+    font-size: 1rem;
   }
 }
