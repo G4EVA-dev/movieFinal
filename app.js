@@ -17,20 +17,19 @@ async function searchMovie() {
   let scrUrl = "https://image.tmdb.org/t/p/original$";
   let poster = scrUrl + posterPath;
 
-  // const img = document.createElement("img");
-  // img.src = `https://image.tmdb.org/t/p/original + ${Posterpath}`;
+  const img = document.createElement("img");
+  img.src = `https://image.tmdb.org/t/p/original + ${Posterpath}`;
 
-  // if (response.status === 404 || response.status === 34) {
-  //   alert("Error!!! Movie not found or Check Internet Network ");
-  // } 
-  // else {
-    
-  //   document.querySelector("#movieTitle").innerHTML = title;
-  //   document.querySelector("#movieReleaseDate").innerHTML = releaseDate;    
-  //   document.querySelector("#movieRuntime").innerHTML = runtime;
-  //   document.querySelector("#movieverview").innerHTML = overview;
-  //   document.querySelector("#moviePoster").appendChild(img);
-  // }
+  if (response.status === 404 || response.status === 34) {
+    alert("Error!!! Movie not found or Check Internet Network ");
+  } 
+  else {    
+    document.querySelector("#movieTitle").innerHTML = title;
+    document.querySelector("#movieReleaseDate").innerHTML = releaseDate;    
+    document.querySelector("#movieRuntime").innerHTML = runtime;
+    document.querySelector("#movieverview").innerHTML = overview;
+    // document.querySelector("#moviePoster").appendChild(img);
+  }
 
   console.log(data);
 } 
