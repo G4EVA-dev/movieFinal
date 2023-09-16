@@ -82,7 +82,6 @@ input::placeholder {
     cursor: pointer;
     
   }
-
   
   .container{
     width: 100vw;
@@ -102,11 +101,12 @@ input::placeholder {
 }
 
  .rating {
-  width: 404px;
-  height: 16px;
-  gap: 10px;
+  width: 250px;
   display: flex; 
+  justify-content: space-between;
+  align-items: center;
   margin-top: 12px;
+  padding-right: 1em;
 }
 .rating img{
   height: 17px;
@@ -172,6 +172,7 @@ main {
   max-width: 1440px;
   height: 100vh; 
   margin: auto;
+  padding: 1.5em;
 }
 
 .featuredMovie {
@@ -180,7 +181,7 @@ main {
 }
 
 .featuredText {
-  width: 1470px;
+  width: 1370px;
   height: 47px;
   margin-top: 45px;
   display: flex;
@@ -188,7 +189,6 @@ main {
 }
 
 .featuredText p {
-  font-family: sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 47px;
@@ -255,11 +255,24 @@ main {
   transform: scale(1.1);
 }
 
+.heart img{
+  width: 30px;
+  height: 30px;
+  background-image: url("./assets/Ellipse\ 3.png");
+  background-size: cover;
+}
+
+.heart img:hover,
+.heart img:focus{
+  background: red;
+  cursor: pointer;
+}
+
 /*!FOOTER*/
 
 footer {
   padding: 1.5em;  
-  width: 80%;
+  width: 100%;
   min-height: fit-content;
   display: grid;
   gap: 20px 150px;
@@ -291,6 +304,7 @@ footer {
 }
 
 @media (max-width: 750px) {
+  
   .descriptionBox {
     width: 310px;
   }
@@ -298,7 +312,7 @@ footer {
     grid-template-columns: max-content;
   }
   .search{
-    width: 310px;
+    width: 90%;
   }
   .text h2, .menu{
     display: none;
@@ -338,6 +352,9 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  
+  
 
   .icon{
     display: none;

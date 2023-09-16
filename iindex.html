@@ -82,6 +82,7 @@
         <div data-testid="movie-card" class="movieCard">
           <div class="poster">
             <img
+              id="moviePoster"
               data-testid="movie-poster"
               src="./assets/strangerThings.png"
               alt="Stranger Things"
@@ -89,19 +90,23 @@
             />
           </div>
           <div class="title">
-            <h2 data-testid="movie-title">Stranger Things</h2>
+            <h2 id="movieTitle" data-testid="movie-title">Stranger Things</h2>
           </div>
           <div class="releaseDate">
-            <h2 data-testid="movie-released-date">USA, 2016 - Current</h2>
+            <h2 id="movieReleaseDate" data-testid="movie-released-date">USA, 2016 - Current</h2>
           </div>
           <div class="rating">
             <div class="imdb">
               <img src="./assets/imdb.png" alt="" />
               <div class="figures"><p>86.0/100</p></div>
             </div>
+            <div class="movieRuntime"></div>
             <div class="rottenTomatoes">
               <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
               <div class="figures"><p>97%</p></div>
+            </div>
+            <div class="heart">
+              <img src="./assets/Heart.png" alt="Heart">
             </div>
           </div>
         </div>
@@ -133,6 +138,9 @@
             <div class="rottenTomatoes">
               <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
               <div class="figures"><p>97%</p></div>
+            </div>
+            <div class="heart">
+              <img src="./assets/Heart.png" alt="Heart">
             </div>
           </div>
         </div>
@@ -167,6 +175,9 @@
               <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
               <div class="figures"><p>97%</p></div>
             </div>
+            <div class="heart">
+              <img src="./assets/Heart.png" alt="Heart">
+            </div>
           </div>
         </div>
 
@@ -197,6 +208,9 @@
             <div class="rottenTomatoes">
               <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
               <div class="figures"><p>97%</p></div>
+            </div>
+            <div class="heart">
+              <img src="./assets/Heart.png" alt="Heart">
             </div>
           </div>
         </div>
@@ -234,6 +248,9 @@
               <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
               <div class="figures"><p>97%</p></div>
             </div>
+            <div class="heart">
+              <img src="./assets/Heart.png" alt="Heart">
+            </div>
           </div>
         </div>
 
@@ -264,6 +281,9 @@
             <div class="rottenTomatoes">
               <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
               <div class="figures"><p>97%</p></div>
+            </div>
+            <div class="heart">
+              <img src="./assets/Heart.png" alt="Heart">
             </div>
           </div>
         </div>
@@ -298,6 +318,9 @@
               <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
               <div class="figures"><p>97%</p></div>
             </div>
+            <div class="heart">
+              <img src="./assets/Heart.png" alt="Heart">
+            </div>
           </div>
         </div>
 
@@ -328,6 +351,9 @@
             <div class="rottenTomatoes">
               <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
               <div class="figures"><p>97%</p></div>
+            </div>
+            <div class="heart">
+              <img src="./assets/Heart.png" alt="Heart">
             </div>
           </div>
         </div>
@@ -361,6 +387,9 @@
                 <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
                 <div class="figures"><p>97%</p></div>
               </div>
+              <div class="heart">
+                <img src="./assets/Heart.png" alt="Heart">
+              </div>
             </div>
           </div>
 
@@ -392,72 +421,14 @@
                 <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
                 <div class="figures"><p>97%</p></div>
               </div>
-            </div>
-          </div>
-
-          <!--Shang-Chi-->
-          <div data-testid="movie-card" class="movieCard">
-            <div class="poster">
-              <img
-                data-testid="movie-poster"
-                src="./assets/shangChi.png"
-                alt="Shang-Chi"
-                loading="lazy"
-              />
-            </div>
-            <div class="title">
-              <h2 data-testid="movie-title">
-                Shang-Chi and the Legend of the Ten Rings
-              </h2>
-            </div>
-            <div class="releaseDate">
-              <h2 data-testid="movie-released-date">USA, 2021</h2>
-            </div>
-            <div class="runtime">
-              <h2 data-testid="movie-runtime"></h2>
-            </div>
-            <div class="rating">
-              <div class="imdb">
-                <img src="./assets/imdb.png" alt="" loading="lazy"/>
-                <div class="figures"><p>86.0/100</p></div>
-              </div>
-              <div class="rottenTomatoes">
-                <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
-                <div class="figures"><p>97%</p></div>
+              <div class="heart">
+                <img id="Heart" src="./assets/Heart.png" alt="Heart">
               </div>
             </div>
           </div>
 
-          <!--Don't Breathe-->
-          <div data-testid="movie-card" class="movieCard">
-            <div class="poster">
-              <img
-                data-testid="movie-poster"
-                src="./assets/dontBreathe.png"
-                alt="Bat Man"
-                loading="lazy"
-              />
-            </div>
-            <div class="title">
-              <h2 data-testid="movie-title">Don't Breathe 2</h2>
-            </div>
-            <div class="releaseDate">
-              <h2 data-testid="movie-released-date">USA, 2021</h2>
-            </div>
-            <div class="runtime">
-              <h2 data-testid="movie-runtime"></h2>
-            </div>
-            <div class="rating">
-              <div class="imdb">
-                <img src="./assets/imdb.png" alt="" />
-                <div class="figures"><p>86.0/100</p></div>
-              </div>
-              <div class="rottenTomatoes">
-                <img src="./assets/rottenTomatoes.png" alt="Rotten Tomatoes" />
-                <div class="figures"><p>97%</p></div>
-              </div>
-            </div>
-          </div>
+        
+          
           
           </div>
           <!--!Footer-->
